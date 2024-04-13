@@ -46,6 +46,7 @@ sudo dd if=uc-bullseye-arm64-lite.img of=/dev/sdb status=progress
 
 ## External notes
 - [uConsole Notes by @selfawaresoup](https://gist.github.com/selfawaresoup/b296f3b82167484a96e4502e74ed3602)
+- [uConsole CM4 OS by Snoozer-94](https://github.com/Snoozer-94/uConsole-CM4-OS)
 
 ## HW mods and extensions
 - [μPico](https://github.com/dotcypress/upico) - RP2040 powered expansion card for GPIO
