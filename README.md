@@ -7,8 +7,6 @@ The kit: clockworkPi [uConsole Kit RPI-CM4 Lite](https://www.clockworkpi.com/pro
 - Recent kernel package
 - FS encryption (LUKS, preferable root, oportunistic home)
 
-- [uConsole Notes by @selfawaresoup](https://gist.github.com/selfawaresoup/b296f3b82167484a96e4502e74ed3602)
-
 ### Recent debian-based OS image
 Current low-hanging-fruit approach implies installing old kernel package into new OS image, which may lead to inconsistencies
 ```
@@ -45,6 +43,8 @@ sudo dd if=uc-bullseye-arm64-lite.img of=/dev/sdb status=progress
 - [uConsole github repo](https://github.com/clockworkpi/uConsole)
 - [uConsole wiki](https://github.com/clockworkpi/uConsole/wiki)
 - [clockworkPi community forum](https://forum.clockworkpi.com)
+
+- [uConsole Notes by @selfawaresoup](https://gist.github.com/selfawaresoup/b296f3b82167484a96e4502e74ed3602)
 
 ## HW mods and extensions
 - [μPico](https://github.com/dotcypress/upico) - RP2040 powered expansion card for GPIO
