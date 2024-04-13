@@ -3,9 +3,9 @@
 The kit: clockworkPi [uConsole Kit RPI-CM4 Lite](https://www.clockworkpi.com/product-page/uconsole-kit-rpi-cm4-lite)
 
 ## Targets
-- Recent minimal debian-based OS image
-- Recent kernel package
-- FS encryption (LUKS, preferable root, oportunistic home)
+- [x] Recent minimal debian-based OS image
+- [ ] Recent kernel package
+- [ ] FS encryption (LUKS, preferable root, oportunistic home)
 
 ### Recent debian-based OS image
 Current low-hanging-fruit approach implies installing old kernel package into new OS image, which may lead to inconsistencies
