@@ -43,6 +43,8 @@ sudo dd if=uc-bullseye-arm64-lite.img of=/dev/sdb status=progress
 - [uConsole github repo](https://github.com/clockworkpi/uConsole)
 - [uConsole wiki](https://github.com/clockworkpi/uConsole/wiki)
 - [clockworkPi community forum](https://forum.clockworkpi.com)
+
+## External notes
 - [uConsole Notes by @selfawaresoup](https://gist.github.com/selfawaresoup/b296f3b82167484a96e4502e74ed3602)
 
 ## HW mods and extensions
