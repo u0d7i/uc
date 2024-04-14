@@ -10,10 +10,9 @@ The kit: clockworkPi [uConsole Kit RPI-CM4 Lite](https://www.clockworkpi.com/pro
 ### Recent debian-based OS image
 Current low-hanging-fruit approach implies installing old kernel package into new OS image, which may lead to inconsistencies
 ```
-# latest  bullseye 64-bit lite vanila img
-wget -c https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64-lite.img.xz
-unxz -k 2023-05-03-raspios-bullseye-arm64-lite.img.xz # don't remove original archive
-mv 2023-05-03-raspios-bullseye-arm64-lite.img uc-bullseye-arm64-lite.img
+wget -c https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2024-03-15/2024-03-15-raspios-bookworm-arm64-lite.img.xz
+unxz -k 2024-03-15-raspios-bookworm-arm64-lite.img.xz # don't remove original archive
+mv 2024-03-15-raspios-bookworm-arm64-lite.img uc-bookworm-arm64-lite.img
 sudo losetup --show -f -P uc-bullseye-arm64-lite.img # assume /dev/loop0 below, parsed outpu in script
 sudo mount /dev/loop0p2 /mnt/
 sudo mount /dev/loop0p1 /mnt/boot/
@@ -35,7 +34,7 @@ sudo rm -f /mnt/root/.bash_history
 sudo umount -R /mnt # recursive
 sudo losetup -D /dev/loop0 # assume loop0 above, parse output in script
 # burn sd card, assume /dev/sdb (BE SURE)
-sudo dd if=uc-bullseye-arm64-lite.img of=/dev/sdb status=progress
+sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress
 
 ```
 
