@@ -5,7 +5,7 @@ The kit: clockworkPi [uConsole Kit RPI-CM4 Lite](https://www.clockworkpi.com/pro
 ## Targets
 - [x] Recent minimal debian-based OS image
 - [ ] Recent kernel package
-- [ ] FS encryption (LUKS, preferable root, oportunistic home)
+- [ ] FS encryption (LUKS, preferable root, opportunistic home)
 
 ### Recent debian-based OS image
 Current low-hanging-fruit approach implies installing old kernel package into new OS image, which may lead to inconsistencies
@@ -52,3 +52,8 @@ sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress
 ## HW mods and extensions
 - [μPico](https://github.com/dotcypress/upico) - RP2040 powered expansion card for GPIO
 - [μHub](https://github.com/dotcypress/uhub) - USB Hub Expansion Card
+
+## Accessories
+- Screen Protector (6K PRO - [ali](https://www.aliexpress.com/item/1005003758637657.html)
+- 2x M4 Lanyard Screw D Ring ([ali](https://www.aliexpress.com/item/1005005830528136.htm))
+- Micro SD Card Adapter Extender ([ali](https://www.aliexpress.com/item/1005004165611777.html))
