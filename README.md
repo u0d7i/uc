@@ -4,7 +4,7 @@ The kit: clockworkPi [uConsole Kit RPI-CM4 Lite](https://www.clockworkpi.com/pro
 
 ## Targets
 - [x] Recent minimal debian-based OS image
-- [ ] Recent kernel package
+- [x] Recent kernel package
 - [ ] FS encryption (LUKS, preferable root, opportunistic home)
 
 ### Recent debian-based OS image
@@ -37,6 +37,10 @@ sudo losetup -D /dev/loop0 # assume loop0 above, parse output in script
 sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress
 
 ```
+
+## Recent kernel package
+
+See [here](kernel) for the .deb repack of the famous kernel by @yatli
 
 ## Resources:
 - [uConsole github repo](https://github.com/clockworkpi/uConsole)
