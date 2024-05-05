@@ -20,8 +20,7 @@ sudo mount --bind /dev /mnt/dev/
 sudo mount --bind /sys /mnt/sys/
 sudo mount --bind /dev/pts /mnt/dev/pts/
 sudo chroot /mnt # you are root in chroot after that, no sudo is needed
-apt update && apt upgrade -y
-touch /boot/cmdline.txt # kernel package install breaks without it
+touch /boot/cmdline.txt # inc case it's missing, kernel package install breaks without it
 curl -s https://raw.githubusercontent.com/clockworkpi/apt/main/debian/KEY.gpg > /etc/apt/trusted.gpg.d/clockworkpi.asc
 echo "deb https://raw.githubusercontent.com/clockworkpi/apt/main/debian/ stable main" > /etc/apt/sources.list.d/clockworkpi.list
 apt update
