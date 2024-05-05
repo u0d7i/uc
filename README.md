@@ -58,6 +58,6 @@ See [here](kernel) for the .deb repack of the famous [kernel](https://forum.cloc
 - [μHub](https://github.com/dotcypress/uhub) - USB Hub Expansion Card
 
 ## Accessories
-- Screen Protector (6K PRO - [ali](https://www.aliexpress.com/item/1005003758637657.html)
+- Screen Protector (6K PRO) - ([ali](https://www.aliexpress.com/item/1005003758637657.html))
 - 2x M4 Lanyard Screw D Ring ([ali](https://www.aliexpress.com/item/1005005830528136.htm))
 - Micro SD Card Adapter Extender ([ali](https://www.aliexpress.com/item/1005004165611777.html))
