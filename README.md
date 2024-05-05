@@ -33,7 +33,7 @@ sudo rm -f /mnt/root/.bash_history
 sudo umount -R /mnt # recursive
 sudo losetup -D /dev/loop0 # assume loop0 above, parse output in script
 # burn sd card, assume /dev/sdb (BE SURE)
-sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress
+sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress bs=4M && sync
 
 ```
 
