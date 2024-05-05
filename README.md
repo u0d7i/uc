@@ -40,7 +40,7 @@ sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress
 
 ## Recent kernel package
 
-See [here](kernel) for the .deb repack of the famous kernel by @yatli
+See [here](kernel) for the .deb repack of the famous [kernel](https://forum.clockworkpi.com/t/archlinux-arm-for-uconsole-cm4-living-documentation/12804) by [@yatli]
 
 ## Resources:
 - [uConsole github repo](https://github.com/clockworkpi/uConsole)
