@@ -55,8 +55,16 @@ See [here](kernel) for the .deb repack of the famous [kernel](https://forum.cloc
 ## HW mods and extensions
 - [μPico](https://github.com/dotcypress/upico) - RP2040 powered expansion card for GPIO
 - [μHub](https://github.com/dotcypress/uhub) - USB Hub Expansion Card
+- [3D printed front cover](https://www.printables.com/model/728066-solid-cover-antenna-mod-uconsole)
 
 ## Accessories
 - Screen Protector (6K PRO) - ([ali](https://www.aliexpress.com/item/1005003758637657.html))
 - 2x M4 Lanyard Screw D Ring ([ali](https://www.aliexpress.com/item/1005005830528136.htm))
 - Micro SD Card Adapter Extender ([ali](https://www.aliexpress.com/item/1005004165611777.html))
+
+## Notable links from clockworkpi community forum
+- https://forum.clockworkpi.com/t/show-us-your-customised-uconsole/13732/15 - magnet wrench holder
+- https://forum.clockworkpi.com/t/show-us-your-customised-uconsole/13732/33 - black anodized back cover
+- https://forum.clockworkpi.com/t/uconsole-r01-poor-wifi-reception/13797 - wifi antenna polarisation changer
+- https://forum.clockworkpi.com/t/uconsole-crashes-when-connecting-flipper-zero/13814/6 - power-toggle usb cable for flipper zero (and other stuff attemting to charge from uc)
+- https://forum.clockworkpi.com/t/bookworm-6-6-y-for-the-uconsole-and-devterm/13235/164 - battery controller calibration
