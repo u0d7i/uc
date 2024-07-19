@@ -41,6 +41,8 @@ sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress bs=4M && sync
 
 See [here](kernel) for the .deb repack of the famous [kernel](https://forum.clockworkpi.com/t/archlinux-arm-for-uconsole-cm4-living-documentation/12804) by [@yatli](https://github.com/yatli)
 
+[Kernel patch for 6.6.y](kernel/clockwork-0001.patch), courtesy of clockwork pi team, yatli and community (see [here](https://github.com/raspberrypi/linux/compare/rpi-6.1.y...yatli:raspberrypi-linux:uc-alarm-6.1.21) for the start)
+
 ## Resources:
 - [uConsole github repo](https://github.com/clockworkpi/uConsole)
 - [uConsole wiki](https://github.com/clockworkpi/uConsole/wiki)
@@ -67,4 +69,10 @@ See [here](kernel) for the .deb repack of the famous [kernel](https://forum.cloc
 - https://forum.clockworkpi.com/t/show-us-your-customised-uconsole/13732/33 - black anodized back cover
 - https://forum.clockworkpi.com/t/uconsole-r01-poor-wifi-reception/13797 - wifi antenna polarisation changer
 - https://forum.clockworkpi.com/t/uconsole-crashes-when-connecting-flipper-zero/13814/6 - power-toggle usb cable for flipper zero (and other stuff attemting to charge from uc)
-- https://forum.clockworkpi.com/t/bookworm-6-6-y-for-the-uconsole-and-devterm/13235/164 - battery controller calibration
+- https://forum.clockworkpi.com/t/battery-level-indicator/13059/3 - battery controller calibration
+- https://forum.clockworkpi.com/t/guide-encrypted-root-partition-on-uconsole/11724 - encrypted root partition on uConsole
+- https://forum.clockworkpi.com/t/encrypting-home-folder-using-luks-cm4/11289 - encrypting /home folder using LUKS - CM4
+- https://forum.clockworkpi.com/t/free-usb-for-uconsole/13071 - free USB for UConsole
+- https://forum.clockworkpi.com/t/cm4-uconsole-defaults-to-pcb-antenna-resulting-in-poor-wifi-reception/10477 - on dtparam=ant2
+- https://forum.clockworkpi.com/t/replacement-wifi-antenna/10576 - replacement wifi antenna discussion
+- https://forum.clockworkpi.com/t/uconsole-mods-usb-rj45-networking-and-more/13440 - USB, RJ45 mods
