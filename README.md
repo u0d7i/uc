@@ -59,10 +59,14 @@ See [here](kernel) for the .deb repack of the famous [kernel](https://forum.cloc
 - [μHub](https://github.com/dotcypress/uhub) - USB Hub Expansion Card
 - [3D printed front cover](https://www.printables.com/model/728066-solid-cover-antenna-mod-uconsole)
 
-## Accessories
+## Parts and Accessories
 - Screen Protector (6K PRO) - ([ali](https://www.aliexpress.com/item/1005003758637657.html))
 - 2x M4 Lanyard Screw D Ring ([ali](https://www.aliexpress.com/item/1005005830528136.htm))
+- M4 4mm black hexagon flat head screws ([ali](https://www.aliexpress.com/item/1005004801296825.html)),
+  or [Ultra thin Super Low](https://www.aliexpress.com/item/1005003972334435.html),
+  or [Silver](https://www.aliexpress.com/item/4001072025844.html)
 - Micro SD Card Adapter Extender ([ali](https://www.aliexpress.com/item/1005004165611777.html))
+- EVQWJN007 Blackberry trackball ([ali](https://www.aliexpress.com/item/1005002988965317.html))
 
 ## Notable links from clockworkpi community forum
 - https://forum.clockworkpi.com/t/show-us-your-customised-uconsole/13732/15 - magnet wrench holder
