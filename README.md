@@ -81,3 +81,4 @@ See [here](kernel) for the .deb repack of the famous [kernel](https://forum.cloc
 - https://forum.clockworkpi.com/t/replacement-wifi-antenna/10576 - replacement wifi antenna discussion
 - https://forum.clockworkpi.com/t/uconsole-mods-usb-rj45-networking-and-more/13440 - USB, RJ45 mods
 - https://forum.clockworkpi.com/t/archlinux-arm-for-uconsole-cm4-living-documentation/12804 - ArchLinux by yatli
+- https://forum.clockworkpi.com/t/uconsole-mods-rf-toolbox-edition/14022 - on RTC module
