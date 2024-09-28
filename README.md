@@ -41,7 +41,16 @@ sudo dd if=uc-bookworm-arm64-lite.img of=/dev/sdb status=progress bs=4M && sync
 
 See [here](kernel) for the .deb repack of the famous [kernel](https://forum.clockworkpi.com/t/archlinux-arm-for-uconsole-cm4-living-documentation/12804) by [@yatli](https://github.com/yatli)
 
-[Kernel patch for 6.6.y](kernel/clockwork-0001.patch), courtesy of clockwork pi team, yatli and community (see [here](https://github.com/raspberrypi/linux/compare/rpi-6.1.y...yatli:raspberrypi-linux:uc-alarm-6.1.21) for the start)
+[Kernel patch for 6.6.y](kernel/0001-clockwork.patch), courtesy of clockwork pi team, yatli and community (see [here](https://github.com/raspberrypi/linux/compare/rpi-6.1.y...yatli:raspberrypi-linux:uc-alarm-6.1.21) for the start). Most recent one is [maintained by @ak-rex here](https://github.com/ak-rex/ClockworkPi-linux), to generete patch you can do:
+```
+git clone https://github.com/ak-rex/ClockworkPi-linux --branch rpi-6.6.y --single-branch uc-rpi-6.6.y
+cd uc-rpi-6.6.y
+git remote add upstream https://github.com/raspberrypi/linux.git --track rpi-6.6.y
+git remote -v
+git fetch upstream
+git merge upstream/rpi-6.6.y -m "Merge upstream"
+git diff --no-prefix upstream/rpi-6.6.y > ../0001-clockwork.patch
+```
 
 ## Resources:
 - [uConsole github repo](https://github.com/clockworkpi/uConsole)

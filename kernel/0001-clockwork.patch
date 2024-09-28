@@ -1,7 +1,7 @@
-diff --git a/arch/arm/boot/dts/overlays/Makefile b/arch/arm/boot/dts/overlays/Makefile
-index cf0574a06cb2..44f7dfdc4012 100644
---- a/arch/arm/boot/dts/overlays/Makefile
-+++ b/arch/arm/boot/dts/overlays/Makefile
+diff --git arch/arm/boot/dts/overlays/Makefile arch/arm/boot/dts/overlays/Makefile
+index b18900e8d313..8998407ccc2f 100644
+--- arch/arm/boot/dts/overlays/Makefile
++++ arch/arm/boot/dts/overlays/Makefile
 @@ -40,6 +40,8 @@ dtbo-$(CONFIG_ARCH_BCM2835) += \
  	cap1106.dtbo \
  	chipdip-dac.dtbo \
@@ -11,11 +11,11 @@ index cf0574a06cb2..44f7dfdc4012 100644
  	cm-swap-i2c0.dtbo \
  	cma.dtbo \
  	crystalfontz-cfa050_pi_m.dtbo \
-diff --git a/arch/arm/boot/dts/overlays/clockworkpi-devterm-overlay.dts b/arch/arm/boot/dts/overlays/clockworkpi-devterm-overlay.dts
+diff --git arch/arm/boot/dts/overlays/clockworkpi-devterm-overlay.dts arch/arm/boot/dts/overlays/clockworkpi-devterm-overlay.dts
 new file mode 100644
 index 000000000000..4d187c53e501
 --- /dev/null
-+++ b/arch/arm/boot/dts/overlays/clockworkpi-devterm-overlay.dts
++++ arch/arm/boot/dts/overlays/clockworkpi-devterm-overlay.dts
 @@ -0,0 +1,245 @@
 +/dts-v1/;
 +/plugin/;
@@ -262,11 +262,11 @@ index 000000000000..4d187c53e501
 +
 +};
 +
-diff --git a/arch/arm/boot/dts/overlays/clockworkpi-uconsole-overlay.dts b/arch/arm/boot/dts/overlays/clockworkpi-uconsole-overlay.dts
+diff --git arch/arm/boot/dts/overlays/clockworkpi-uconsole-overlay.dts arch/arm/boot/dts/overlays/clockworkpi-uconsole-overlay.dts
 new file mode 100644
 index 000000000000..4dd5e34ccc90
 --- /dev/null
-+++ b/arch/arm/boot/dts/overlays/clockworkpi-uconsole-overlay.dts
++++ arch/arm/boot/dts/overlays/clockworkpi-uconsole-overlay.dts
 @@ -0,0 +1,245 @@
 +/dts-v1/;
 +/plugin/;
@@ -513,11 +513,11 @@ index 000000000000..4dd5e34ccc90
 +
 +};
 +
-diff --git a/arch/arm64/configs/bcm2711_defconfig b/arch/arm64/configs/bcm2711_defconfig
-index f2e5dca7866d..73f28ccc1e73 100644
---- a/arch/arm64/configs/bcm2711_defconfig
-+++ b/arch/arm64/configs/bcm2711_defconfig
-@@ -1676,5 +1676,21 @@ CONFIG_FUNCTION_PROFILER=y
+diff --git arch/arm64/configs/bcm2711_defconfig arch/arm64/configs/bcm2711_defconfig
+index 18fef72d0e6a..293eb15c5c11 100644
+--- arch/arm64/configs/bcm2711_defconfig
++++ arch/arm64/configs/bcm2711_defconfig
+@@ -1690,5 +1690,21 @@ CONFIG_FUNCTION_PROFILER=y
  CONFIG_STACK_TRACER=y
  CONFIG_SCHED_TRACER=y
  CONFIG_BLK_DEV_IO_TRACE=y
@@ -539,10 +539,10 @@ index f2e5dca7866d..73f28ccc1e73 100644
 +# CONFIG_SIMPLE_AMPLIFIER_SWITCH is not set
  # CONFIG_UPROBE_EVENTS is not set
  # CONFIG_STRICT_DEVMEM is not set
-diff --git a/drivers/gpu/drm/panel/Kconfig b/drivers/gpu/drm/panel/Kconfig
+diff --git drivers/gpu/drm/panel/Kconfig drivers/gpu/drm/panel/Kconfig
 index 307dd2c0fae4..47eb74324024 100644
---- a/drivers/gpu/drm/panel/Kconfig
-+++ b/drivers/gpu/drm/panel/Kconfig
+--- drivers/gpu/drm/panel/Kconfig
++++ drivers/gpu/drm/panel/Kconfig
 @@ -76,6 +76,32 @@ config DRM_PANEL_BOE_TV101WUM_NL6
  	  Say Y here if you want to support for BOE TV101WUM and AUO KD101N80
  	  45NA WUXGA PANEL DSI Video Mode panel
@@ -576,21 +576,21 @@ index 307dd2c0fae4..47eb74324024 100644
  config DRM_PANEL_DSI_CM
  	tristate "Generic DSI command mode panels"
  	depends on OF
-diff --git a/drivers/gpu/drm/panel/Makefile b/drivers/gpu/drm/panel/Makefile
+diff --git drivers/gpu/drm/panel/Makefile drivers/gpu/drm/panel/Makefile
 index 9dd9b3503802..9f39ed1a1fc0 100644
---- a/drivers/gpu/drm/panel/Makefile
-+++ b/drivers/gpu/drm/panel/Makefile
+--- drivers/gpu/drm/panel/Makefile
++++ drivers/gpu/drm/panel/Makefile
 @@ -88,3 +88,5 @@ obj-$(CONFIG_DRM_PANEL_VISIONOX_R66451) += panel-visionox-r66451.o
  obj-$(CONFIG_DRM_PANEL_WAVESHARE_TOUCHSCREEN) += panel-waveshare-dsi.o
  obj-$(CONFIG_DRM_PANEL_WIDECHIPS_WS2401) += panel-widechips-ws2401.o
  obj-$(CONFIG_DRM_PANEL_XINPENG_XPP055C272) += panel-xinpeng-xpp055c272.o
 +obj-$(CONFIG_DRM_PANEL_CWD686) += panel-cwd686.o
 +obj-$(CONFIG_DRM_PANEL_CWU50) += panel-cwu50.o
-diff --git a/drivers/gpu/drm/panel/panel-cwd686.c b/drivers/gpu/drm/panel/panel-cwd686.c
+diff --git drivers/gpu/drm/panel/panel-cwd686.c drivers/gpu/drm/panel/panel-cwd686.c
 new file mode 100644
 index 000000000000..a25bf78c9b49
 --- /dev/null
-+++ b/drivers/gpu/drm/panel/panel-cwd686.c
++++ drivers/gpu/drm/panel/panel-cwd686.c
 @@ -0,0 +1,300 @@
 +// SPDX-License-Identifier: GPL-2.0+
 +
@@ -892,11 +892,11 @@ index 000000000000..a25bf78c9b49
 +
 +MODULE_DESCRIPTION("DRM Driver for cwd686 MIPI DSI panel");
 +MODULE_LICENSE("GPL v2");
-diff --git a/drivers/gpu/drm/panel/panel-cwu50.c b/drivers/gpu/drm/panel/panel-cwu50.c
+diff --git drivers/gpu/drm/panel/panel-cwu50.c drivers/gpu/drm/panel/panel-cwu50.c
 new file mode 100644
 index 000000000000..f4238faccd8d
 --- /dev/null
-+++ b/drivers/gpu/drm/panel/panel-cwu50.c
++++ drivers/gpu/drm/panel/panel-cwu50.c
 @@ -0,0 +1,486 @@
 +// SPDX-License-Identifier: GPL-2.0+
 +
@@ -1384,11 +1384,11 @@ index 000000000000..f4238faccd8d
 +
 +MODULE_DESCRIPTION("DRM Driver for cwu50 MIPI DSI panel");
 +MODULE_LICENSE("GPL v2");
-diff --git a/drivers/gpu/drm/vc4/vc4_dsi.c b/drivers/gpu/drm/vc4/vc4_dsi.c
-index 894154d824ab..56b4d004fb16 100644
---- a/drivers/gpu/drm/vc4/vc4_dsi.c
-+++ b/drivers/gpu/drm/vc4/vc4_dsi.c
-@@ -753,7 +753,7 @@ static void vc4_dsi_ulps(struct vc4_dsi *dsi, bool ulps)
+diff --git drivers/gpu/drm/vc4/vc4_dsi.c drivers/gpu/drm/vc4/vc4_dsi.c
+index 78f232656172..5445b8c1aef4 100644
+--- drivers/gpu/drm/vc4/vc4_dsi.c
++++ drivers/gpu/drm/vc4/vc4_dsi.c
+@@ -755,7 +755,7 @@ static void vc4_dsi_ulps(struct vc4_dsi *dsi, bool ulps)
  			 (dsi->lanes > 1 ? DSI1_STAT_PHY_D1_STOP : 0) |
  			 (dsi->lanes > 2 ? DSI1_STAT_PHY_D2_STOP : 0) |
  			 (dsi->lanes > 3 ? DSI1_STAT_PHY_D3_STOP : 0));
@@ -1397,7 +1397,7 @@ index 894154d824ab..56b4d004fb16 100644
  	bool ulps_currently_enabled = (DSI_PORT_READ(PHY_AFEC0) &
  				       DSI_PORT_BIT(PHY_AFEC0_LATCH_ULPS));
  
-@@ -781,14 +781,15 @@ static void vc4_dsi_ulps(struct vc4_dsi *dsi, bool ulps)
+@@ -783,14 +783,15 @@ static void vc4_dsi_ulps(struct vc4_dsi *dsi, bool ulps)
  
  	DSI_PORT_WRITE(STAT, stat_stop);
  	DSI_PORT_WRITE(PHYC, DSI_PORT_READ(PHYC) & ~phyc_ulps);
@@ -1420,10 +1420,10 @@ index 894154d824ab..56b4d004fb16 100644
  }
  
  static u32
-diff --git a/drivers/power/supply/axp20x_ac_power.c b/drivers/power/supply/axp20x_ac_power.c
+diff --git drivers/power/supply/axp20x_ac_power.c drivers/power/supply/axp20x_ac_power.c
 index 19a118633115..a98b08b80b9a 100644
---- a/drivers/power/supply/axp20x_ac_power.c
-+++ b/drivers/power/supply/axp20x_ac_power.c
+--- drivers/power/supply/axp20x_ac_power.c
++++ drivers/power/supply/axp20x_ac_power.c
 @@ -52,6 +52,9 @@ static irqreturn_t axp20x_ac_power_irq(int irq, void *devid)
  {
  	struct axp20x_ac_power *power = devid;
@@ -1434,10 +1434,10 @@ index 19a118633115..a98b08b80b9a 100644
  	power_supply_changed(power->supply);
  
  	return IRQ_HANDLED;
-diff --git a/drivers/power/supply/axp20x_battery.c b/drivers/power/supply/axp20x_battery.c
+diff --git drivers/power/supply/axp20x_battery.c drivers/power/supply/axp20x_battery.c
 index 6ac5c80cfda2..4bfc61a9b6d2 100644
---- a/drivers/power/supply/axp20x_battery.c
-+++ b/drivers/power/supply/axp20x_battery.c
+--- drivers/power/supply/axp20x_battery.c
++++ drivers/power/supply/axp20x_battery.c
 @@ -55,6 +55,10 @@
  
  #define AXP20X_V_OFF_MASK		GENMASK(2, 0)
@@ -1620,10 +1620,10 @@ index 6ac5c80cfda2..4bfc61a9b6d2 100644
  	return 0;
  }
  
-diff --git a/drivers/staging/vc04_services/bcm2835-audio/bcm2835.c b/drivers/staging/vc04_services/bcm2835-audio/bcm2835.c
+diff --git drivers/staging/vc04_services/bcm2835-audio/bcm2835.c drivers/staging/vc04_services/bcm2835-audio/bcm2835.c
 index 6347becff898..685529c6cae9 100644
---- a/drivers/staging/vc04_services/bcm2835-audio/bcm2835.c
-+++ b/drivers/staging/vc04_services/bcm2835-audio/bcm2835.c
+--- drivers/staging/vc04_services/bcm2835-audio/bcm2835.c
++++ drivers/staging/vc04_services/bcm2835-audio/bcm2835.c
 @@ -10,7 +10,7 @@
  #include "bcm2835.h"
  #include <soc/bcm2835/raspberrypi-firmware.h>
@@ -1633,10 +1633,10 @@ index 6347becff898..685529c6cae9 100644
  static bool enable_headphones = true;
  static int num_channels = MAX_SUBSTREAMS;
  
-diff --git a/drivers/video/backlight/Kconfig b/drivers/video/backlight/Kconfig
+diff --git drivers/video/backlight/Kconfig drivers/video/backlight/Kconfig
 index b4a61d00ba39..e88b7679eaba 100644
---- a/drivers/video/backlight/Kconfig
-+++ b/drivers/video/backlight/Kconfig
+--- drivers/video/backlight/Kconfig
++++ drivers/video/backlight/Kconfig
 @@ -479,6 +479,12 @@ config BACKLIGHT_LED
  	  If you have a LCD backlight adjustable by LED class driver, say Y
  	  to enable this driver.
@@ -1650,20 +1650,20 @@ index b4a61d00ba39..e88b7679eaba 100644
  endif # BACKLIGHT_CLASS_DEVICE
  
  endmenu
-diff --git a/drivers/video/backlight/Makefile b/drivers/video/backlight/Makefile
+diff --git drivers/video/backlight/Makefile drivers/video/backlight/Makefile
 index e03cc5a394e5..3ab37bf12914 100644
---- a/drivers/video/backlight/Makefile
-+++ b/drivers/video/backlight/Makefile
+--- drivers/video/backlight/Makefile
++++ drivers/video/backlight/Makefile
 @@ -59,3 +59,4 @@ obj-$(CONFIG_BACKLIGHT_WM831X)		+= wm831x_bl.o
  obj-$(CONFIG_BACKLIGHT_ARCXCNN) 	+= arcxcnn_bl.o
  obj-$(CONFIG_BACKLIGHT_RAVE_SP)		+= rave-sp-backlight.o
  obj-$(CONFIG_BACKLIGHT_LED)		+= led_bl.o
 +obj-$(CONFIG_BACKLIGHT_OCP8178)		+= ocp8178_bl.o
-diff --git a/drivers/video/backlight/ocp8178_bl.c b/drivers/video/backlight/ocp8178_bl.c
+diff --git drivers/video/backlight/ocp8178_bl.c drivers/video/backlight/ocp8178_bl.c
 new file mode 100644
 index 000000000000..db8db1771644
 --- /dev/null
-+++ b/drivers/video/backlight/ocp8178_bl.c
++++ drivers/video/backlight/ocp8178_bl.c
 @@ -0,0 +1,277 @@
 +/*
 + * ocp8178_bl.c - ocp8178 backlight driver
