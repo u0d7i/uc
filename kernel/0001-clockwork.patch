@@ -102,7 +102,7 @@ index 000000000000..4d187c53e501
 +			bootargs = "8250.nr_uarts=1";
 +		};
 +	};
-+	
++
 +	fragment@5 {
 +		target = <&pcie0>;
 +		__overlay__ {
@@ -353,7 +353,7 @@ index 000000000000..4dd5e34ccc90
 +			bootargs = "8250.nr_uarts=1";
 +		};
 +	};
-+	
++
 +	fragment@5 {
 +		target = <&pcie0>;
 +		__overlay__ {
@@ -638,7 +638,7 @@ index 000000000000..a25bf78c9b49
 +	mipi_dsi_dcs_write_buffer(dsi, d, ARRAY_SIZE(d));	 \
 +})
 +
-+static void cwd686_init_sequence(struct cwd686 *ctx) 
++static void cwd686_init_sequence(struct cwd686 *ctx)
 +{
 +	struct mipi_dsi_device *dsi = to_mipi_dsi_device(ctx->dev);
 +
