@@ -49,7 +49,7 @@ git remote add upstream https://github.com/raspberrypi/linux.git --track rpi-6.6
 git remote -v
 git fetch upstream
 git merge upstream/rpi-6.6.y -m "Merge upstream"
-git diff --no-prefix upstream/rpi-6.6.y > ../0001-clockwork.patch
+git diff upstream/rpi-6.6.y > ../0001-clockwork.patch
 ```
 
 ## Resources:
